@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter&family=Mate:ital@0;1&family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <title><%= data.name %></title>
+  </head>
+
+  <body>
+    <div class="details-div">
+      <a href="/">
+        <img src="../images/pfeilnachlinks.svg" alt="pfeilnachlinks" class="pfeilnachlinks" />
+      </a>
+
+      <h1 id="start">Wilkommen in <%= data.city %>!</h1>
+      <img src="<%= data.cityPic %>" alt="city-picture" class="picture" />
+
+      <h2>Informationen über die Stadt</h2>
+      <p><%= data.cityInfo %></p>
+
+      <h2>Die wichtigste Sehenswürdigkeit in <%= data.city %>: „<%= data.place %>“</h2>
+      <img src="<%= data.placePic1 %>" alt="place-picture" class="picture" />
+      <p><%= data.cityInfo %></p>
+      <img src="<%= data.placePic2 %>" alt="place-picture" class="picture" />
+
+      <p>Hier ist ein Video über <%= data.place %>:</p>
+      <iframe
+        width="560"
+        height="315"
+        src="<%= data.placeVideo %>"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        class="video"></iframe>
+
+      <h2>Der Weg nach <%= data.place %></h2>
+      <iframe
+        src="<%= data.placeMap %>"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="map"></iframe>
+
+      <p>Weitere Sehenswürdigkeiten in <%= data.city %>:</p>
+      <p>
+        <a href="<%= data.link1 %>" target="_blank"><%= data.other1 %></a>
+        <a href="<%= data.link2 %>" target="_blank"><%= data.other2 %></a>
+        <a href="<%= data.link3 %>" target="_blank"><%= data.other3 %></a>
+      </p>
+
+      <a href="#start">
+        <img src="../images/pfeilnachoben.svg" alt="pfeilnachoben" class="pfeilnachoben" />
+      </a>
+    </div>
+  </body>
+</html>

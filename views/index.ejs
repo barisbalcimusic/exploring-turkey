@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter&family=Mate:ital@0;1&family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="../public/script.js"></script>
+
+    <title>Startseite</title>
+  </head>
+  <body>
+    <div class="startpage-div" id="startpage-div">
+      <h1>Entdecke die Türkei</h1>
+
+      <p>Wähle eine Stadt aus:</p>
+
+      <form method="post">
+        <select name="cityname" id="cityname">
+          <option value="" hidden></option>
+          <option value="adiyaman">Adıyaman</option>
+          <option value="ankara">Ankara</option>
+          <option value="antalya">Antalya</option>
+          <option value="batman">Batman</option>
+          <option value="canakkale">Çanakkale</option>
+          <option value="corum">Çorum</option>
+          <option value="denizli">Denizli</option>
+          <option value="istanbul">İstanbul</option>
+          <option value="izmir">İzmir</option>
+          <option value="karabuk">Karabük</option>
+          <option value="mersin">Mersin</option>
+          <option value="mugla">Muğla</option>
+          <option value="nevsehir">Nevşehir</option>
+          <option value="sanliurfa">Şanlıurfa</option>
+          <option value="trabzon">Trabzon</option>
+        </select>
+        <button type="submit" id="submit" disabled>fertig</button>
+      </form>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
